@@ -1,0 +1,21 @@
+/* 
+    Il primo elemento: uno sfondo nero, colore del testo bianco e un peso del carattere in grassetto
+    Il secondo elemento: uno sfondo giallo
+    Entrambi gli elementi : una dimensione del carattere di 28px e un elenco di caratteri contenenti Helveticae così come Times New Roman, con sans-serifE come un fallback
+ */
+
+ .click {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+ }
+
+ .noclick {
+    background-color: yellow ;
+ }
+
+ .click, .noclick {
+    font-size: 28px,;
+    font-family: 'Helvetica','Times New Roman', 'sans-serif';
+
+ }
