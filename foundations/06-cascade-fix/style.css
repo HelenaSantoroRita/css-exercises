@@ -1,3 +1,4 @@
+/* #1 :PROBLEM WAS BECAUSE OF ORDER */ 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,16 +9,18 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/*#2 :ID HAS MORE SPECIFITY THAN CLASSES, so in html these buttons have id and classes, 
+so i chose to call here the id to change the first button in green */
+ #confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -28,15 +31,16 @@ body {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
-
+ 
+/*#3 chain was more specific than class so I had more specificity with the same chain idea to the 3rd p*/
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+div.text.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }
